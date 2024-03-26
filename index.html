@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Empanadillas Martínez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E352A;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+        }
+        .menu-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .item-info {
+            flex-grow: 1;
+        }
+        .price {
+            font-weight: bold;
+        }
+        .allergens {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Menú - Empanadillas Martínez</h1>
+
+<div class="menu-section">
+    <h2>Principales</h2>
+    <div class="item" onclick="showDetails('Empanadilla Criolla', 'Precio: $2.50', 'Alérgenos: Trigo, Carne')">
+        <img src="empanadilla cokete.jpg" alt="Empanadilla Criolla">
+        <div class="item-info">
+            <p>Empanadilla Criolla</p>
+            <p class="price">$2.50</p>
+        </div>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Postres</h2>
+    <div class="item" onclick="showDetails('Fondant de Chocolate', 'Precio: $4.00', 'Alérgenos: Huevo, Lácteos')">
+        <img src="fondant.jpg" alt="Fondant de Chocolate">
+        <div class="item-info">
+            <p>Fondant de Chocolate</p>
+            <p class="price">$4.00</p>
+        </div>
+    </div>
+    <div class="item" onclick="showDetails('Creme Brulé', 'Precio: $3.50', 'Alérgenos: Huevo, Lácteos')">
+        <img src="creme.webp" alt="Creme Brulé">
+        <div class="item-info">
+            <p>Creme Brulé</p>
+            <p class="price">$3.50</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showDetails(name, price, allergens) {
+        alert(name + "\n" + price + "\n" + allergens);
+    }
+</script>
+
+</body>
+</html>
